@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+     fx:controller="com.fightbooking.controller.EventDetailController"
+      alignment="TOP_CENTER"
+      spacing="20"
+      style="-fx-background-color:#0f0f0f; -fx-padding:30;">
+
+    <Label text="FIGHT NIGHT 2026"
+           style="-fx-text-fill:#ff2e2e; -fx-font-size:28px; -fx-font-weight:bold;"/>
+
+    <Label text="Bangkok Arena"
+           style="-fx-text-fill:white;"/>
+
+    <Label text="Wed 5 March"
+           style="-fx-text-fill:white;"/>
+
+    <Separator/>
+
+    <Label text="Fight Card"
+           style="-fx-text-fill:white; -fx-font-size:18px;"/>
+
+    <VBox spacing="10">
+
+        <Label text="18:00   Fighter A vs Fighter B"
+               style="-fx-text-fill:white;"/>
+
+        <Label text="18:30   Fighter C vs Fighter D"
+               style="-fx-text-fill:white;"/>
+
+        <Label text="19:00   Fighter E vs Fighter F"
+               style="-fx-text-fill:white;"/>
+
+        <Label text="19:30   Fighter G vs Fighter H"
+               style="-fx-text-fill:white;"/>
+
+        <Label text="20:00   Fighter I vs Fighter J"
+               style="-fx-text-fill:white;"/>
+
+    </VBox>
+
+    <Separator/>
+
+    <Label text="Available seats : 240"
+           style="-fx-text-fill:white;"/>
+
+    <Button text="BOOK TICKET"
+            onAction="#goBooking"
+            style="-fx-background-color:#ff2e2e;
+                   -fx-text-fill:white;
+                   -fx-font-weight:bold;
+                   -fx-padding:10 25 10 25;"/>
+
+</VBox>

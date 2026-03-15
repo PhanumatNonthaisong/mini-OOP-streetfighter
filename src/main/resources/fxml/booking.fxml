@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600" prefWidth="800"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fightbooking.controller.BookingController"
+            style="-fx-background-color:#0f172a;">
+
+    <!-- TITLE -->
+    <top>
+        <Label text="Select Zone"
+               style="-fx-text-fill:white; -fx-font-size:24px; -fx-padding:20;" />
+    </top>
+
+    <!-- ZONE MAP -->
+    <center>
+
+        <Pane prefWidth="800" prefHeight="500">
+
+            <Label text="Arena"
+                   layoutX="350" layoutY="230"
+                   style="-fx-background-color:red; -fx-text-fill:white;
+                          -fx-font-size:20; -fx-padding:30;" />
+
+            <Button text="A1" layoutX="360" layoutY="160" onAction="#selectZone"/>
+            <Button text="A2" layoutX="470" layoutY="240" onAction="#selectZone"/>
+            <Button text="A3" layoutX="360" layoutY="340" onAction="#selectZone"/>
+            <Button text="A4" layoutX="250" layoutY="240" onAction="#selectZone"/>
+
+            <Button text="B1" layoutX="360" layoutY="100" onAction="#selectZone"/>
+            <Button text="B2" layoutX="550" layoutY="240" onAction="#selectZone"/>
+            <Button text="B3" layoutX="360" layoutY="420" onAction="#selectZone"/>
+            <Button text="B4" layoutX="150" layoutY="240" onAction="#selectZone"/>
+
+            <Button text="C1" layoutX="360" layoutY="40" onAction="#selectZone"/>
+            <Button text="C2" layoutX="670" layoutY="240" onAction="#selectZone"/>
+            <Button text="C3" layoutX="360" layoutY="500" onAction="#selectZone"/>
+            <Button text="C4" layoutX="20" layoutY="240" onAction="#selectZone"/>
+
+        </Pane>
+
+    </center>
+
+    <!-- BACK BUTTON -->
+    <bottom>
+
+        <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding:20">
+
+            <Button text="← Back"
+                    onAction="#goBack"/>
+
+        </HBox>
+
+    </bottom>
+
+</BorderPane>

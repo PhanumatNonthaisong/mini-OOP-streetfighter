@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER"
+      style="-fx-background-color: linear-gradient(to bottom,#0f0f0f,#1a1a1a);"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.fightbooking.controller.LoginController">
+
+    <Label text="FIGHT TICKET BOOKING"
+           style="-fx-text-fill:#ff2e2e; -fx-font-size:30px; -fx-font-weight:bold;"/>
+
+    <TextField fx:id="emailField"
+               promptText="Email"
+               maxWidth="250"
+               style="-fx-background-color:#1f1f1f; -fx-text-fill:white; -fx-border-color:#ff2e2e;"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Password"
+                   maxWidth="250"
+                   style="-fx-background-color:#1f1f1f; -fx-text-fill:white; -fx-border-color:#ff2e2e;"/>
+
+    <Button text="LOGIN"
+            onAction="#handleLogin"
+            maxWidth="250"
+            style="-fx-background-color:#ff2e2e; -fx-text-fill:white; -fx-font-weight:bold;"/>
+
+    <Hyperlink text="Register"
+               onAction="#handleRegister"
+               style="-fx-text-fill:#ff2e2e;"/>
+
+</VBox>

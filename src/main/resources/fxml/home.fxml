@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.fightbooking.controller.HomeController"
+            prefWidth="1000" prefHeight="600"
+            style="-fx-background-color:#0f172a;">
+
+    <!-- LEFT SIDEBAR -->
+    <left>
+        <VBox spacing="20"
+              prefWidth="200"
+              style="-fx-background-color:#1e293b; -fx-padding:20;">
+
+            <Label text="🥊 KKU STREET FIGHTER"
+                   style="-fx-text-fill:white; -fx-font-size:16px; -fx-font-weight:bold;"/>
+
+            <Button text="📅 ตารางแข่งขัน"
+                    style="-fx-background-color:#ef4444; -fx-text-fill:white; -fx-font-weight:bold;"/>
+
+            <Button text="🎟 จองตั๋ว"
+                    style="-fx-background-color:transparent; -fx-text-fill:white;"/>
+
+            <Button text="🕘 ประวัติการจอง"
+                    style="-fx-background-color:transparent; -fx-text-fill:white;"/>
+
+            <Button text="📊 สรุปสถิติ"
+                    style="-fx-background-color:transparent; -fx-text-fill:white;"/>
+
+        </VBox>
+    </left>
+
+
+    <!-- HEADER -->
+    <top>
+        <HBox alignment="CENTER_LEFT"
+              spacing="20"
+              style="-fx-background-color:#1e293b; -fx-padding:15;">
+
+            <Label text="KKU STREET FIGHTER"
+                   style="-fx-text-fill:white; -fx-font-size:20px; -fx-font-weight:bold;"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <TextField promptText="ค้นหาคู่มวย / สถานที่..."
+                       maxWidth="250"/>
+
+        </HBox>
+    </top>
+
+
+    <!-- CENTER CONTENT -->
+    <center>
+
+        <VBox spacing="15"
+              style="-fx-padding:20;">
+
+            <Label text="ตารางการแข่งขัน (Schedule)"
+                   style="-fx-text-fill:white; -fx-font-size:18px; -fx-font-weight:bold;"/>
+
+
+            <TableView fx:id="eventTable"
+                       style="-fx-background-color:#1e293b;">
+
+                <columns>
+
+                    <TableColumn text="คู่ชก"
+                                 fx:id="fightColumn"
+                                 prefWidth="250"/>
+
+                    <TableColumn text="วัน-เวลา"
+                                 fx:id="dateColumn"
+                                 prefWidth="150"/>
+
+                    <TableColumn text="สถานที่"
+                                 fx:id="venueColumn"
+                                 prefWidth="150"/>
+
+                    <TableColumn text="ราคา"
+                                 fx:id="priceColumn"
+                                 prefWidth="100"/>
+
+                 	<TableColumn text="รายละเอียด"
+					             fx:id="actionColumn"
+					             prefWidth="150"/>
+                </columns>
+
+            </TableView>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>
