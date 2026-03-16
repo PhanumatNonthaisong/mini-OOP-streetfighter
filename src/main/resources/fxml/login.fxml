@@ -17,6 +17,6 @@
 
     <Button maxWidth="250" onAction="#handleLogin" style="-fx-background-color:#ff2e2e; -fx-text-fill:white; -fx-font-weight:bold;" text="LOGIN" />
 
-    <Hyperlink onAction="#handleRegister" style="-fx-text-fill:#ff2e2e;" text="popo" />
+    <Hyperlink onAction="#handleRegister" style="-fx-text-fill:#ff2e2e;" text="PEEPO" />
 
 </VBox>
